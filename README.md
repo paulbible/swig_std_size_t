@@ -35,7 +35,7 @@ I tried to implement a limited portion for `std::size_t` in `std_size_t.i` which
 does not compile.
 
 
-## Getting started / Please help!
+# Getting started / Please help!
 
 ```
 git clone https://github.com/paulbible/swig_std_size_t
@@ -63,7 +63,7 @@ ints
 exit()
 ```
 
-## Program versions
+# Program versions
 
 python version: Python 2.7.11
 g++ version: g++ (GCC) 4.4.7
@@ -78,10 +78,10 @@ tried a newer swig (swig-3.0.10) without success
 
 The [std::vector::size_type wrapped as a pointer not an integer](http://swig.10945.n7.nabble.com/std-vector-size-type-wrapped-as-a-pointer-not-an-integer-td7790.html) link had some helpful info but the problem is not exactly the same.
 
-# some clues?
+### some clues?
 I found [this link](https://github.com/c-abird/magnum.fe/blob/master/magnumfe/swig/typemaps/primitives.i), but thinking wishfully and importing **primitivies.i** did not work for me. 
 
-After that I tried to implement
+After that I tried to implement the `SWIG_AsVal_std_size_t` and `SWIG_From_std_size_t`, but  no luck.
 
 SO questions already consulted:
 
