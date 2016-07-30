@@ -1,0 +1,29 @@
+python
+from a_swig_vec_std_size import StdSizeVec
+ssv = StdSizeVec()
+vals = ssv.getValues()
+vals
+ints = ssv.getInts()
+ints
+exit()
+
+--------------
+[paul@login-0-0 stack_swig]$ python
+Python 2.7.11 (default, May  7 2016, 23:37:19) 
+[GCC 4.4.7 20120313 (Red Hat 4.4.7-16)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from a_swig_vec_std_size import StdSizeVec
+>>> ssv = StdSizeVec()
+>>> vals = ssv.getValues()
+>>> vals
+<Swig Object of type 'std::vector< std::size_t > *' at 0x2ad7047be330>
+>>> ints = ssv.getInts()
+>>> ints
+<Swig Object of type 'std::vector< int > *' at 0x2ad7047be780>
+>>> exit()
+swig/python detected a memory leak of type 'std::vector< int > *', no destructor found.
+swig/python detected a memory leak of type 'std::vector< std::size_t > *', no destructor found.
+[paul@login-0-0 stack_swig]$
+
+
+
